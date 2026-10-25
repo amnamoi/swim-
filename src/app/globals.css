@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Design tokens — the single source of truth for colour and type. */
+@theme {
+  --color-ink: #0b1f3a;
+  --color-ink-soft: #132d52;
+  --color-muted: #52627a;
+  --color-muted-strong: #44546b;
+  --color-on-dark-muted: #c9d6e6;
+  --color-canvas: #f3f7fa;
+  --color-surface: #ffffff;
+  --color-line: #dde5ee;
+  --color-track: #e3eaf2;
+  --color-brand: #0067d6;
+  --color-brand-hover: #004fa8;
+  --color-accent: #ffb020;
+  --color-success: #0a7a5a;
+  --color-success-bg: #e2f5ee;
+  --color-success-ink: #0a4f3a;
+  --color-danger: #b42318;
+  --color-danger-bg: #fef3f2;
+  --color-danger-ink: #7a271a;
+}
+
+@theme inline {
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-display: var(--font-fredoka), var(--font-jakarta), sans-serif;
+}
+
+@layer base {
+  button,
+  input {
+    font-family: inherit;
+  }
+}
